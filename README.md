@@ -149,4 +149,4 @@ Este repositório contém uma coleção de projetos interativos desenvolvidos co
 
 3. Acesse o projeto no navegador: `http://localhost:8000`.
 
-**Feito por Claudio Henrique**.
+Feito por **Claudio Henrique**.
