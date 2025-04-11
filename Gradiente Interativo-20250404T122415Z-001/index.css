@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.gradient-container {
+    width: 80%;
+    height: 300px;
+    border-radius: 8px;
+    transition: background 0.5s ease-in-out;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.color-input {
+    margin: 5px;
+}
+.gradient-box {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 8px;
+}

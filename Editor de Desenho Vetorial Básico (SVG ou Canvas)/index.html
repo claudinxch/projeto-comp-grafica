@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Desenho Vetorial</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Editor de Desenho Vetorial</h1>
+    <div id="toolbar">
+        <button onclick="setShape('line')">Linha</button>
+        <button onclick="setShape('rectangle')">Retângulo</button>
+        <button onclick="setShape('circle')">Círculo</button>
+        <button onclick="setShape('polygon')">Polígono</button>
+        <button onclick="applyTransformation('translate')">Translação</button>
+        <button onclick="applyTransformation('rotate')">Rotação</button>
+        <button onclick="applyTransformation('scale')">Escala</button>
+    </div>
+    <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>

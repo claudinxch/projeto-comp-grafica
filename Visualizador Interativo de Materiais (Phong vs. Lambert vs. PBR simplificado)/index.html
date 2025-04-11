@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Materiais 3D</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <h1>Visualizador Interativo de Materiais</h1>
+    <div id="controls">
+        <label>Modelo de Material:
+            <select id="materialType" onchange="changeMaterial()">
+                <option value="lambert">Lambert (Difuso)</option>
+                <option value="phong">Phong (Difuso + Especular)</option>
+                <option value="blinn">Blinn-Phong</option>
+                <option value="pbr">PBR Simplificado</option>
+            </select>
+        </label>
+        <label>Metalness:
+            <input type="range" id="metalness" min="0" max="1" step="0.1" value="0.5" oninput="updateMaterial()">
+        </label>
+        <label>Roughness:
+            <input type="range" id="roughness" min="0" max="1" step="0.1" value="0.5" oninput="updateMaterial()">
+        </label>
+    </div>
+    <div id="viewer"></div>
+    <script src="index.js"></script>
+</body>
+</html>

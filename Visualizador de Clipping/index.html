@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Clipping (Cohen-Sutherland)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Visualizador de Clipping</h1>
+        <p>Desenhe linhas e retângulos para visualizar o algoritmo de clipping Cohen-Sutherland</p>
+    </header>
+
+    <div class="container">
+        <canvas id="canvas" width="600" height="400"></canvas>
+        <div class="controls">
+            <button id="clearButton">Limpar</button>
+            <p>Defina a janela de recorte com os controles abaixo:</p>
+            <label for="clipLeft">Esquerda:</label>
+            <input type="number" id="clipLeft" value="100" min="0" max="600">
+            <label for="clipTop">Cima:</label>
+            <input type="number" id="clipTop" value="50" min="0" max="400">
+            <label for="clipRight">Direita:</label>
+            <input type="number" id="clipRight" value="500" min="0" max="600">
+            <label for="clipBottom">Fundo:</label>
+            <input type="number" id="clipBottom" value="350" min="0" max="400">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

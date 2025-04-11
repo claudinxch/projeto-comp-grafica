@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador 3D - Three.js</title>
+    <link rel="stylesheet" href="inde.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <h1>Visualizador de Primitivas 3D</h1>
+    <div id="controls">
+        <button onclick="changeGeometry('cube')">Cubo</button>
+        <button onclick="changeGeometry('sphere')">Esfera</button>
+        <button onclick="changeGeometry('pyramid')">Pirâmide</button>
+        <button onclick="changeGeometry('torus')">Toroide</button>
+    </div>
+    <div id="viewer"></div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Cegueira de Cores</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Cegueira de Cores</h1>
+        
+        <div>
+            <label for="color-picker">Escolha uma cor:</label>
+            <input type="color" id="color-picker" />
+        </div>
+
+        <div>
+            <label for="image-upload">Ou faça o upload de uma imagem:</label>
+            <input type="file" id="image-upload" accept="image/*" />
+        </div>
+
+        <div>
+            <label for="dalt-type">Escolha o tipo de daltonismo:</label>
+            <select id="dalt-type">
+                <option value="protanopia">Protanopia</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="tritanopia">Tritanopia</option>
+            </select>
+        </div>
+
+        <div id="output">
+            <h3>Resultado:</h3>
+            <div id="simulated-image">
+                <p>Selecione uma cor ou faça o upload de uma imagem para ver o efeito do daltonismo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

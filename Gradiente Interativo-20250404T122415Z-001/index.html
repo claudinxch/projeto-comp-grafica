@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente Interativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .gradient-container {
+            width: 80%;
+            height: 300px;
+            border-radius: 8px;
+            transition: background 0.5s ease-in-out;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .color-input {
+            margin: 5px;
+        }
+        .gradient-box {
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Editor de Gradientes Interativos</h1>
+    
+    <!-- Caixa de exibição do gradiente -->
+    <div id="gradient-box" class="gradient-container"></div>
+
+    <!-- Controles de cor -->
+    <div class="controls">
+        <label for="color1">Escolha a primeira cor:</label>
+        <input id="color1" type="color" class="color-input" value="#ff0000">
+        
+        <label for="color2">Escolha a segunda cor:</label>
+        <input id="color2" type="color" class="color-input" value="#0000ff">
+        
+        <label for="color3">Escolha a terceira cor:</label>
+        <input id="color3" type="color" class="color-input" value="#00ff00">
+
+        <button onclick="applyGradient()">Aplicar Gradiente</button>
+    </div>
+
+    <script>
+        // Função para atualizar o gradiente
+        function applyGradient() {
+            // Obtendo as cores selecionadas
+            const color1 = document.getElementById('color1').value;
+            const color2 = document.getElementById('color2').value;
+            const color3 = document.getElementById('color3').value;
+
+            // Aplicando o gradiente no fundo do container
+            const gradientBox = document.getElementById('gradient-box');
+            gradientBox.style.background = `linear-gradient(to right, ${color1}, ${color2}, ${color3})`;
+        }
+
+        // Inicializar o gradiente na primeira execução
+        applyGradient();
+    </script>
+
+</body>
+</html>

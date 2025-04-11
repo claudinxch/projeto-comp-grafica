@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtros Espaciais - Convolução 2D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Filtros Espaciais: Suavização e Realce</h1>
+    
+    <input type="file" id="imageInput" accept="image/*">
+    <canvas id="canvas"></canvas>
+    
+    <div class="controls">
+      <button onclick="applyBlur()">Aplicar Blur (Média)</button>
+      <button onclick="applyGaussianBlur()">Aplicar Blur Gaussiano</button>
+      <button onclick="applySharpen()">Aplicar Sharpen</button>
+      <button onclick="applyEmboss()">Aplicar Emboss</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

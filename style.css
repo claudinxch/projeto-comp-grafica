@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500&family=Oswald:wght@300&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    color: #F7E0B7;
+    padding: 20px 40px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 40px;
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.menu li::marker {
+    color: #17564E;
+}
+
+.menu a {
+    color: #17564E;
+    font-size: 15px;
+    font-weight: 500;
+}

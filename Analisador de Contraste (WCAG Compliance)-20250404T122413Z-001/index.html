@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Contraste WCAG</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analisador de Contraste WCAG</h1>
+        <p>Verifique se a relação de contraste entre o texto e o fundo está em conformidade com as normas WCAG.</p>
+        
+        <div class="inputs">
+            <label for="colorText">Cor do Texto (Hexadecimal):</label>
+            <input type="color" id="colorText" value="#000000">
+        </div>
+        
+        <div class="inputs">
+            <label for="colorBackground">Cor do Fundo (Hexadecimal):</label>
+            <input type="color" id="colorBackground" value="#ffffff">
+        </div>
+        
+        <button id="checkContrast">Verificar Contraste</button>
+        
+        <div id="result">
+            <p><strong>Relação de Contraste:</strong> <span id="contrastRatio"></span></p>
+            <p id="compliance"></p>
+        </div>
+        
+        <div id="explanation">
+            <h2>Como Funciona?</h2>
+            <p>Este analisador calcula a relação de contraste entre a cor do texto e a cor de fundo. A WCAG recomenda uma relação mínima de 4.5:1 para texto normal e 3:1 para texto grande.</p>
+            <p><strong>Luminância relativa:</strong> A luminância de uma cor é a quantidade de luz que ela reflete.</p>
+            <p><strong>Normas WCAG:</strong> Para garantir a acessibilidade, a WCAG exige relações de contraste específicas para melhorar a legibilidade.</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

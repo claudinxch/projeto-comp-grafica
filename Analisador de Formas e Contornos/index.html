@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Formas e Contornos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Formas e Contornos</h1>
+        <p>Detecte formas e desenhe bounding boxes ao redor delas.</p>
+    </header>
+
+    <div class="container">
+        <section class="image-container">
+            <h2>Escolha a Imagem</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <canvas id="canvas" width="600" height="400"></canvas>
+        </section>
+
+        <section class="controls">
+            <h2>Controle de Análise</h2>
+            <button id="detectButton">Detectar Formas</button>
+            <p id="info">Selecione uma imagem e aplique a detecção de formas.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

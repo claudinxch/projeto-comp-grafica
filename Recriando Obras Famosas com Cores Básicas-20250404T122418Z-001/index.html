@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recriando Obras Famosas com Cores Básicas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recrie uma Obra Famosa com Cores Básicas</h1>
+        
+        <div class="image-selection">
+            <label for="image-selector">Escolha uma obra famosa:</label>
+            <select id="image-selector">
+                <option value="van-gogh">Van Gogh - Noite Estrelada</option>
+                <option value="mondrian">Mondrian - Composição com Vermelho, Azul e Amarelo</option>
+            </select>
+        </div>
+
+        <div class="palette">
+            <h3>Escolha suas cores:</h3>
+            <input type="color" id="color1" value="#FF0000">
+            <input type="color" id="color2" value="#0000FF">
+            <input type="color" id="color3" value="#FFFF00">
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="art-canvas" width="600" height="400"></canvas>
+        </div>
+
+        <div class="instructions">
+            <p>Use a paleta de cores para tentar recriar a obra famosa.</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Pixel Art</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de Pixel Art</h1>
+        <p>Converta qualquer imagem em estilo "pixel art" controlando a resolução e paleta de cores.</p>
+    </header>
+
+    <div class="container">
+        <section class="controls">
+            <h2>Escolha uma Imagem</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            
+            <h2>Configurações de Pixel Art</h2>
+            <label for="resolution">Resolução</label>
+            <input type="range" id="resolution" min="5" max="50" value="10">
+            <span id="resolutionValue">10</span>
+
+            <label for="palette">Paleta de Cores</label>
+            <select id="palette">
+                <option value="grayscale">Escala de Cinza</option>
+                <option value="random">Paleta Aleatória</option>
+            </select>
+        </section>
+
+        <section class="image-container">
+            <canvas id="canvas"></canvas>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

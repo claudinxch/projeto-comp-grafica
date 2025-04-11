@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Paleta Harmônica</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criador de Paleta Harmônica</h1>
+        <label for="color-picker">Escolha uma cor base:</label>
+        <input type="color" id="color-picker" value="#ff0000">
+        
+        <div class="palettes">
+            <div id="analogous" class="palette">
+                <h3>Análoga</h3>
+                <div class="colors"></div>
+            </div>
+            <div id="complementary" class="palette">
+                <h3>Complementar</h3>
+                <div class="colors"></div>
+            </div>
+            <div id="triadic" class="palette">
+                <h3>Triádica</h3>
+                <div class="colors"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

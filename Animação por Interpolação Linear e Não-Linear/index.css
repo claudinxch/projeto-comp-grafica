@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+#controls {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+select, button {
+    margin: 5px;
+    padding: 5px;
+}
+
+#viewer {
+    width: 100%;
+    height: 500px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Prismas e Poliedros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Prismas e Poliedros</h1>
+    
+    <div>
+      <label for="sides">Número de Lados (mínimo 3):</label>
+      <input type="number" id="sides" value="6" min="3">
+    </div>
+    
+    <div>
+      <label for="height">Altura:</label>
+      <input type="number" id="height" value="2">
+    </div>
+    
+    <button onclick="generatePrism()">Gerar Prisma/Poliedro</button>
+    
+    <canvas id="glCanvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

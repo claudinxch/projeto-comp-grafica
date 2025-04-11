@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap de Frequência de Cores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Heatmap de Frequência de Cores</h1>
+        <p>Visualize a incidência de cores em uma imagem.</p>
+    </header>
+
+    <div class="container">
+        <section class="image-container">
+            <h2>Escolha a Imagem</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <canvas id="canvas" width="600" height="400"></canvas>
+        </section>
+
+        <section class="controls">
+            <h2>Controle de Heatmap</h2>
+            <button id="generateButton">Gerar Heatmap</button>
+            <p id="info">Selecione uma imagem e clique para gerar o Heatmap de Frequência de Cores.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

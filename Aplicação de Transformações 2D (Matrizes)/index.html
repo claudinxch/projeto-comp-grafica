@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformações 2D</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Transformações 2D - Matrizes</h1>
+    <div id="controls">
+        <button onclick="setShape('rectangle')">Retângulo</button>
+        <button onclick="setShape('triangle')">Triângulo</button>
+        <button onclick="setShape('circle')">Círculo</button>
+        <br><br>
+        <label>Rotação: <input type="range" id="rotation" min="-180" max="180" value="0" oninput="applyTransformations()"></label>
+        <label>Escala: <input type="range" id="scale" min="0.5" max="2" step="0.1" value="1" oninput="applyTransformations()"></label>
+        <label>Cisalhamento X: <input type="range" id="shearX" min="-1" max="1" step="0.1" value="0" oninput="applyTransformations()"></label>
+        <label>Cisalhamento Y: <input type="range" id="shearY" min="-1" max="1" step="0.1" value="0" oninput="applyTransformations()"></label>
+    </div>
+    <canvas id="transformCanvas" width="500" height="500"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
